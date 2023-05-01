@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HangOut</title>
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/20962f3e4b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/member.css" />
+    <script>
+      let regPass =
+        /^.*(?=^.{5,15}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;
+      $(function () {
+        $(".btnClose").click(function () {
+          $(this).closest(".popup").removeClass("on");
+        });
+
+        $(".btnNext").click(function (e) {
+          e.preventDefault();
+
+          $("#popPw").addClass("on");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header class="header">
+        <div class="logo">
+          <a href="../index.html"><img src="../img/logo.png" alt="logo" /></a>
+        </div>
+      </header>
+      <main class="find findId">
+        <div class="div">
+          <div class="top">
+            <h3>비밀번호 찾기</h3>
+          </div>
+        </div>
+        <div style="margin-top: 60px">
+          <div class="id">
+            <input type="text" name="uid" placeholder="아이디" />
+            <input type="password" name="pass" placeholder="이메일" />
+          </div>
+          <div class="button" style="padding-top: 100px">
+            <a href="../index.html">
+              <input type="button" class="btnCancel" value="취소" />
+            </a>
+            <input type="submit" class="btnNext" value="비밀번호 변경" />
+          </div>
+        </div>
+      </main>
+      <div class="footer_div">
+        <footer>
+          <div class="footer">
+            <div class="container">
+              <div class="footer-col">
+                <ul class="info">
+                  <li>KCYCOMPANY</li>
+                  <li>대표자 김채영</li>
+                  <li>주소 부산광역시 남구 수영로 299</li>
+                  <li>TEL 051-000-0000</li>
+                  <li>EMAIL kcy013100@naver.com</li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <ul class="link">
+                  <li><a href="#">고객센터</a></li>
+                  <li><a href="#">이용약관</a></li>
+                  <li><a href="#">문의하기</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- 비밀번호 수정 팝업 -->
+    <div id="popPw" class="popup">
+      <div class="find findPwChange">
+        <nav>
+          <h1>비밀번호 변경</h1>
+          <button class="btnClose">X</button>
+        </nav>
+        <form action="#">
+          <table border="0">
+            <tr>
+              <td>아이디</td>
+              <td class="pwuid">aaa</td>
+            </tr>
+            <tr>
+              <td>새 비밀번호</td>
+              <td>
+                <input
+                  type="password"
+                  id="pass1"
+                  name="pass1"
+                  placeholder="새 비밀번호 입력"
+                  required="required"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>새 비밀번호 확인</td>
+              <td>
+                <input
+                  type="password"
+                  id="pass2"
+                  name="pass2"
+                  placeholder="새 비밀번호 입력"
+                  required="required"
+                />
+              </td>
+            </tr>
+          </table>
+          <p>
+            비밀번호를 변경해 주세요.<br />
+            영문, 숫자, 특수문자를 사용하여 5자 이상 입력해 주세요.
+          </p>
+
+          <div class="btn">
+            <a href="#" class="popCancel">취소</a>
+            <input type="submit" class="popNext" value="완료" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

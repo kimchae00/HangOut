@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HangOut</title>
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/20962f3e4b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/my.css" />
+    <script></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header class="header">
+        <div class="top">
+          <span>김채영님 반가워요!</span>
+          <a href="#">로그아웃</a>
+          <a href="../my/info.html">마이페이지</a>
+        </div>
+        <div class="logo">
+          <a style="cursor: pointer" href="../main.html"
+            ><img src="../img/logo.png" alt="logo"
+          /></a>
+        </div>
+        <div class="search">
+          <input type="search" placeholder="친구이름 검색" />
+          <a href="../search/result.html">
+            <img src="../img/search.png" alt="검색" />
+          </a>
+        </div>
+        <div class="plus">
+          <a href="#">
+            <img src="../img/users.png" alt="친구신청" />
+          </a>
+        </div>
+        <div class="chat">
+          <img src="../img/message.png" alt="채팅" />
+        </div>
+      </header>
+      <main>
+        <section>
+          <section class="my myInfo">
+            <div class="container">
+              <div class="div">
+                <div class="menu">
+                  <ul>
+                    <li class="on">
+                      <a href="../my/info.html"><h2>나의 정보</h2></a>
+                    </li>
+                    <li>
+                      <a href="../my/article.html"><h2>나의 글관리</h2></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="default">
+                  <h2>기본 정보</h2>
+                  <table>
+                    <tr>
+                      <td>아이디</td>
+                      <td>aaa</td>
+                      <td>이름</td>
+                      <td>김채영</td>
+                    </tr>
+                    <tr>
+                      <td>비밀번호</td>
+                      <td><button class="btnPw">비밀번호 변경</button></td>
+                      <td>이메일</td>
+                      <td>aaa@email.com</td>
+                    </tr>
+                    <tr>
+                      <td>주소</td>
+                      <td colspan="2">서울특별시 강남구 로로로 12</td>
+                      <td><button class="btnZip">주소검색</button></td>
+                    </tr>
+                    <tr>
+                      <td>프로필 보안</td>
+                      <td colspan="2">
+                        <input type="radio" name="profile" /> 공개
+                        <input type="radio" name="profile" /> 비공개
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>메시지 권한</td>
+                      <td colspan="2">
+                        <input type="radio" name="message" /> 친구만
+                        <input type="radio" name="message" /> 모두
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="profile">
+                  <h2>프로필 정보</h2>
+                  <table>
+                    <tr>
+                      <td>프로필 사진</td>
+                      <td>
+                        <img style="width: 200px" src="../img/woman.jpg" />
+                      </td>
+                      <td colspan="2"><button class="btnImg">변경</button></td>
+                    </tr>
+                    <tr>
+                      <td>생년월일</td>
+                      <td colspan="2"><input type="date" /></td>
+                    </tr>
+                    <tr>
+                      <td>자기소개</td>
+                      <td><span>모두 반가워요~</span></td>
+                    </tr>
+                  </table>
+                  <div class="button">
+                    <div>
+                      <button class="btnModify">수정하기</button>
+                    </div>
+                    <div>
+                      <button class="btnDelete">탈퇴하기</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </main>
+      <div class="footer_div">
+        <footer>
+          <div class="footer">
+            <div class="container">
+              <div class="footer-col">
+                <ul class="info">
+                  <li>KCYCOMPANY</li>
+                  <li>대표자 김채영</li>
+                  <li>주소 부산광역시 남구 수영로 299</li>
+                  <li>TEL 051-000-0000</li>
+                  <li>EMAIL kcy013100@naver.com</li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <ul class="link">
+                  <li><a href="#">고객센터</a></li>
+                  <li><a href="#">이용약관</a></li>
+                  <li><a href="#">문의하기</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

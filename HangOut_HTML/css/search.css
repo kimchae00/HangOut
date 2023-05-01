@@ -1,0 +1,273 @@
+/* 공통 */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", Helvetica, sans-serif,
+    Arial;
+}
+a {
+  text-decoration: none;
+  color: #555;
+}
+ul,
+ol {
+  list-style: none;
+}
+input,
+textarea {
+  outline: none;
+}
+img {
+  border-style: none;
+  max-width: 100%;
+}
+button {
+  outline: none;
+  border: none;
+}
+#wrapper {
+  width: 100%;
+  min-width: 1200px;
+}
+
+header {
+  min-width: 1200px;
+  width: 1800px;
+  height: 105px;
+  margin: 0 auto;
+}
+
+header > div {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header > .top > span {
+  position: absolute;
+  top: 20px;
+  right: 400px;
+  font-size: 25px;
+  font-weight: 500;
+}
+header > .top > a:nth-of-type(1) {
+  position: absolute;
+  top: 20px;
+  right: 290px;
+  font-size: 25px;
+  font-weight: 500;
+}
+header > .top > a:nth-of-type(2) {
+  position: absolute;
+  top: 20px;
+  right: 160px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+header > .top > a:hover {
+  color: #0a8d52;
+}
+
+header > .logo img {
+  position: absolute;
+  top: 40px;
+  left: 100px;
+  width: 200px;
+}
+
+header > .search input {
+  position: absolute;
+  top: 80px;
+  left: 400px;
+  width: 950px;
+  height: 70px;
+  font-size: 25px;
+  text-indent: 10px;
+}
+
+header > .search img {
+  position: absolute;
+  top: 83px;
+  left: 1260px;
+  width: 70px;
+}
+
+header > .plus img {
+  position: absolute;
+  top: 65px;
+  right: 270px;
+  width: 90px;
+}
+
+header > .chat img {
+  position: absolute;
+  top: 73px;
+  right: 122px;
+  width: 90px;
+}
+
+main {
+  min-width: 1200px;
+  width: 1800px;
+  height: auto;
+  min-height: 900px;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+
+main > section {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.result {
+  /*
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  */
+  width: 1500px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.result > .container {
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.result h2 {
+  font-size: 40px;
+  margin: 20px;
+}
+.result strong {
+  color: #0a8d52;
+  font-size: 44px;
+  margin-right: 10px;
+}
+
+.result .user {
+  border-top: 1px solid #c2c1c1;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left; /* this centers the items vertically */
+  align-items: left;
+}
+
+.result .user li {
+  margin-top: 20px;
+  margin-left: 10px;
+  padding-bottom: 20px;
+  font-size: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #c2c1c1;
+}
+
+.result .user > li p {
+  margin-left: 90px;
+  font-size: 35px;
+}
+.result .user > li img:nth-of-type(2) {
+  margin-left: 110px;
+  font-size: 24px;
+}
+
+.btnPlus {
+  width: 200px;
+  height: 70px;
+  margin-left: 650px;
+  font-size: 30px;
+  color: rgb(241, 243, 245);
+  font-weight: 400;
+  background-color: #1b975f;
+}
+.btnPlus:hover {
+  background-color: #0f5233;
+  cursor: pointer;
+}
+
+.paging {
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+}
+.paging > ul {
+  border: none;
+  align-items: center;
+  display: inline-flex;
+  list-style-type: none;
+  justify-content: center;
+  max-width: 100%;
+  width: 100%;
+}
+.paging > ul > li {
+  border: none;
+}
+
+.paging a {
+  display: inline-block;
+  box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%),
+    0 1px 5px 0 rgb(0 0 0 / 12%);
+  border-radius: 4px;
+  align-items: center;
+  text-align: center;
+  height: 55px;
+  width: 50px;
+  margin: 10px 20px;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+footer {
+  margin-top: 100px;
+  height: 400px;
+  background: #ceebde;
+  padding: 43px 0 75px;
+}
+.footer-col:first-child {
+  max-width: 524px;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+.info {
+  margin: 0 -8px;
+}
+.info li {
+  float: left;
+  padding: 8px;
+  line-height: 0.8;
+  font-size: 30px;
+  color: #0d4e31;
+  font-weight: 300;
+}
+.info li:first-child {
+  font-weight: bold;
+  font-weight: 700;
+}
+.link {
+  margin: -10px;
+}
+.link li {
+  float: left;
+  padding: 0 2px;
+}
+.link li a {
+  display: block;
+  line-height: 1;
+  font-family: bold;
+  font-size: 28px;
+  color: #0d4e31;
+  font-weight: 700;
+  padding: 2px;
+  margin: 0 2px 10px;
+}

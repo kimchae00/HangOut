@@ -1,0 +1,545 @@
+/* 공통 */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", Helvetica, sans-serif,
+    Arial;
+}
+a {
+  text-decoration: none;
+  color: #555;
+}
+ul,
+ol {
+  list-style: none;
+}
+input,
+textarea {
+  outline: none;
+}
+img {
+  border-style: none;
+  max-width: 100%;
+}
+button {
+  outline: none;
+  border: none;
+}
+#wrapper {
+  width: 100%;
+  min-width: 1200px;
+}
+
+/* 헤더 */
+header {
+  min-width: 1200px;
+  width: 1800px;
+  height: 105px;
+  margin: 0 auto;
+}
+
+header > div {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header > .logo img {
+  position: absolute;
+  top: 40px;
+  left: 100px;
+  width: 200px;
+}
+
+/* 푸터 */
+footer {
+  margin-top: 100px;
+  height: 100px;
+  background: #ceebde;
+  padding: 43px 0 75px;
+}
+.footer-col:first-child {
+  max-width: 524px;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+.info {
+  margin: 0 -8px;
+}
+.info li {
+  float: left;
+  padding: 8px;
+  line-height: 0.8;
+  font-size: 30px;
+  color: #0d4e31;
+  font-weight: 300;
+}
+.info li:first-child {
+  font-weight: bold;
+  font-weight: 700;
+}
+.link {
+  margin: -10px;
+}
+.link li {
+  float: left;
+  padding: 0 2px;
+}
+.link li a {
+  display: block;
+  line-height: 1;
+  font-family: bold;
+  font-size: 28px;
+  color: #0d4e31;
+  font-weight: 700;
+  padding: 2px;
+  margin: 0 2px 10px;
+}
+
+/* 약관 */
+.terms {
+  min-width: 1200px;
+  width: 100%;
+  height: auto;
+  min-height: 800px;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+.terms > .div {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.terms .top {
+  font-size: 40px;
+  margin: 0 auto;
+}
+
+.terms-content {
+  width: 900px;
+  height: auto;
+  margin: 0 auto;
+}
+.content {
+  padding: 25px 25px 0;
+}
+.content > h4 {
+  display: block;
+  color: #333;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  float: left;
+}
+
+.content > textarea {
+  width: 900px;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid #cfcece;
+  font-size: 20px;
+}
+
+.terms-check {
+  width: 300px;
+  margin-top: 15px;
+  margin-left: 25px;
+  margin-bottom: 60px;
+}
+
+.terms-check > input {
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-right: 10px;
+}
+
+.terms-check > p {
+  font-size: 20px;
+  float: left;
+}
+
+.terms-check div {
+  display: inline-block;
+  width: 500px;
+  margin-top: 50px;
+  margin-left: -397px;
+}
+.terms-check div input {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.terms-check div p {
+  font-size: 20px;
+  margin-left: 180px;
+  margin-top: -35px;
+}
+
+.button {
+  width: 900px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.btnCancel {
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  margin-right: 50px;
+  margin-left: 12px;
+  border: none;
+  background: #1b753c;
+  text-align: center;
+}
+.btnNext {
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 50px;
+  border: none;
+  background: #1b753c;
+  text-align: center;
+}
+.btnCancel > a,
+.btnNext > a {
+  color: #fff;
+}
+.btnCancel:hover,
+.btnNext:hover {
+  background: #0f4121;
+  cursor: pointer;
+}
+
+/* 회원가입 */
+.register {
+  min-width: 1200px;
+  width: 100%;
+  height: auto;
+  min-height: 800px;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+.register > .div {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.register .top {
+  font-size: 40px;
+  margin: 0 auto;
+}
+
+.register > .div2 {
+  text-align: center;
+  margin: 0 auto;
+}
+.register_table {
+  padding-top: 50px;
+}
+.register_table tr {
+  border-bottom: 1px solid #493a3a;
+}
+
+.register_table tr > td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.register_table tr > td:nth-child(1) {
+  display: block;
+  width: 400px;
+  height: 40px;
+  float: left;
+  color: #333;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 20px;
+  margin-top: 7px;
+  line-height: 30px;
+}
+
+.register_table tr > td:nth-child(2) {
+  float: left;
+  color: #333;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.register_table tr > td:nth-child(2) > input {
+  font-size: 15px;
+}
+
+.register_table tr > td:nth-child(2) > input:nth-child(1) {
+  width: 450px;
+  padding: 10px;
+  margin-right: 5px;
+  border: 1px solid #e5e5e5;
+  margin-right: 20px;
+  font-size: 17px;
+}
+
+.register_table tr > td:nth-child(2) > input:nth-child(2) {
+  width: 120px;
+  height: 40px;
+  margin: 0 0 0 5px;
+  color: #fff;
+  background: #0c7544;
+  border: none;
+  text-align: center;
+  font-size: 17px;
+}
+.register_table tr > td:nth-child(2) > input:nth-child(2):hover {
+  background: #074427;
+  cursor: pointer;
+}
+
+input[name="addr1"] {
+  display: block;
+  width: 470px;
+  height: 40px;
+  margin-top: 5px;
+  text-indent: 10px;
+  border: 1px solid #e5e5e5;
+}
+
+input[name="addr2"] {
+  display: block;
+  width: 470px;
+  height: 40px;
+  margin-top: 5px;
+  text-indent: 10px;
+  border: 1px solid #e5e5e5;
+}
+
+/* 아이디 찾기 */
+.find {
+  min-width: 1200px;
+  width: 100%;
+  height: auto;
+  min-height: 800px;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+.find > .div {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.find > div {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.find .top {
+  font-size: 40px;
+  margin: 0 auto;
+}
+
+.find .id {
+  padding: 70px;
+  width: 900px;
+  height: 300px;
+  margin: 0 auto;
+  border: 1px solid #cfcfcf;
+  text-align: center;
+  font-size: 20px;
+}
+
+.find .id input {
+  margin-top: 25px;
+  width: 600px;
+  height: 70px;
+  text-indent: 20px;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.find .result {
+  width: 900px;
+  height: 100px;
+  margin: 0 auto;
+  padding-top: 20px;
+  margin-left: 100px;
+  text-align: left;
+}
+.find p {
+  width: 600px;
+  float: left;
+  font-size: 23px;
+}
+
+.find .button {
+  width: 900px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.popup.on {
+  display: block;
+}
+.popup > div {
+  display: table;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 200px;
+  background: #fff;
+  padding-top: 0;
+}
+
+.popup > div > nav {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #52ad78;
+  overflow: hidden;
+}
+.popup > div > nav > h1 {
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 25px;
+  color: white;
+}
+.popup > div > nav > button {
+  float: right;
+  width: 60px;
+  height: 30px;
+  background-color: transparent;
+  background-position: 227px -25px;
+  border: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  margin-top: 8px;
+}
+.popup > div > p {
+  padding: 16px;
+  box-sizing: border-box;
+  font-size: 25px;
+}
+
+.find > form table {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  table-layout: fixed;
+  border-top: 1px solid #b6bdc7;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.find table tr > td {
+  padding: 20px;
+  border: 1px solid #e9e9e9;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+
+.find > form table tr > td:nth-child(1) {
+  width: 270px;
+  height: 100px;
+  font-size: 24px;
+}
+.find table tr > td:nth-child(2) {
+  font-weight: bold;
+}
+
+.findPwChange table input {
+  width: 350px;
+  height: 60px;
+  border: 1px solid #e4eaec;
+  background: #f7f7f7;
+  text-indent: 13px;
+  font-size: 22px;
+}
+
+.find table div {
+  margin-top: 4px;
+}
+
+.find > form > p {
+  margin-top: 40px;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  line-height: 30px;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.find > form .btn {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.findPwChange table tr > td:nth-child(1) {
+  width: 180px;
+}
+
+.find > form .btn > .popCancel {
+  display: inline-block;
+  width: 170px;
+  height: 60px;
+  text-align: center;
+  line-height: 58px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 20px;
+  box-sizing: border-box;
+  margin-left: 37px;
+  margin-right: 37px;
+  margin-top: 4px;
+}
+.find > form .popCancel:hover {
+  background-color: #f7f7f7;
+}
+
+.find > form .btn > .popNext {
+  padding: 7px 20px;
+  display: inline-block;
+  width: 170px;
+  height: 60px;
+  text-align: center;
+  line-height: 36px;
+  background-color: #419707;
+  border: 1px solid #419707;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.find > form .btn > .popNext:hover {
+  background-color: #036dde;
+}

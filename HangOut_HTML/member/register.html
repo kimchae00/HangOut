@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HangOut</title>
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/20962f3e4b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/member.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <header class="header">
+        <div class="logo">
+          <a href="../index.html"><img src="../img/logo.png" alt="logo" /></a>
+        </div>
+      </header>
+      <main class="register">
+        <div class="div">
+          <div class="top">
+            <h3>회원가입</h3>
+          </div>
+
+          <div class="div2">
+            <form action="#" class="register_form">
+              <table class="register_table">
+                <tr>
+                  <td>아이디</td>
+                  <td>
+                    <input
+                      type="text"
+                      name="uid"
+                      placeholder="아이디를 입력"
+                      required="required"
+                    />
+                    <input type="button" name="btnUidCheck" value="중복확인" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>비밀번호</td>
+                  <td>
+                    <input
+                      type="password"
+                      name="pass1"
+                      placeholder="숫자, 영어, 특수문자 포함 5자 이상 패스워드"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>비밀번호 확인</td>
+                  <td>
+                    <input
+                      type="password"
+                      name="pass2"
+                      placeholder="숫자, 영어, 특수문자 포함 5자 이상 패스워드"
+                    />
+                    <span
+                      style="margin-left: 10px; font-size: 12px"
+                      class="passwordMsg"
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>이름</td>
+                  <td>
+                    <input type="text" name="name" placeholder="이름" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>휴대폰</td>
+                  <td>
+                    <input type="text" name="hp" placeholder="- 포함 13자리" />
+                    <input type="button" name="btnHpCheck" value="중복확인" />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>이메일</td>
+                  <td>
+                    <input type="email" name="email" placeholder="이메일" />
+                    <input
+                      type="button"
+                      name="btnEmailCheck"
+                      value="중복확인"
+                    />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>주소</td>
+                  <td>
+                    <input
+                      type="text"
+                      name="zip"
+                      id="zip"
+                      readonly="readonly"
+                      placeholder="우편번호"
+                    />
+                    <input type="button" value="주소검색" />
+
+                    <input
+                      type="text"
+                      id="addr1"
+                      name="addr1"
+                      placeholder="기본주소"
+                    />
+                    <input
+                      type="text"
+                      id="addr2"
+                      name="addr2"
+                      placeholder="상세주소"
+                    />
+                  </td>
+                </tr>
+              </table>
+              <div class="button" style="padding-top: 50px">
+                <a href="../index.html">
+                  <input type="button" class="btnCancel" value="취소" />
+                </a>
+                <input type="submit" class="btnNext" value="가입" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+      <div class="footer_div">
+        <footer>
+          <div class="footer">
+            <div class="container">
+              <div class="footer-col">
+                <ul class="info">
+                  <li>KCYCOMPANY</li>
+                  <li>대표자 김채영</li>
+                  <li>주소 부산광역시 남구 수영로 299</li>
+                  <li>TEL 051-000-0000</li>
+                  <li>EMAIL kcy013100@naver.com</li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <ul class="link">
+                  <li><a href="#">고객센터</a></li>
+                  <li><a href="#">이용약관</a></li>
+                  <li><a href="#">문의하기</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
