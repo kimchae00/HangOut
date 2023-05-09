@@ -406,7 +406,8 @@ input[name="addr2"] {
 }
 .popup > div {
   display: table;
-  width: 40%;
+  width: 200px;
+  height: 400px;
   margin: 0 auto;
   margin-top: 200px;
   background: #fff;
