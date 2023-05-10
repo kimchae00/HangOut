@@ -237,7 +237,7 @@ main > section {
 .popup > div {
   display: table;
   width: 1200px;
-  height: 900px;
+  height: 850px;
   margin: 0 auto;
   margin-top: 200px;
   background: #fff;
@@ -304,8 +304,7 @@ main > section {
 }
 
 .popInfo > .button {
-  margin: 0 auto;
-  align-items: center;
+  display: flex;
 }
 
 .popDelete {
@@ -315,10 +314,17 @@ main > section {
   color: rgb(241, 243, 245);
   font-weight: 400;
   background-color: #1b975f;
+  margin-top: 30px;
+  margin-left: 315px;
+  margin-right: 170px;
 }
+
 .popDelete:hover {
   background-color: #0f5233;
   cursor: pointer;
+}
+
+.popChat {
 }
 
 footer {

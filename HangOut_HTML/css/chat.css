@@ -1,0 +1,286 @@
+/* 공통 */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", Helvetica, sans-serif,
+    Arial;
+}
+a {
+  text-decoration: none;
+  color: #555;
+}
+ul,
+ol {
+  list-style: none;
+}
+input,
+textarea {
+  outline: none;
+}
+img {
+  border-style: none;
+  max-width: 100%;
+}
+button {
+  outline: none;
+  border: none;
+}
+#wrapper {
+  width: 100%;
+  min-width: 1200px;
+}
+
+header {
+  min-width: 1200px;
+  width: 1800px;
+  height: 105px;
+  margin: 0 auto;
+}
+
+header > div {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header > .top > span {
+  position: absolute;
+  top: 20px;
+  right: 400px;
+  font-size: 25px;
+  font-weight: 500;
+}
+header > .top > a:nth-of-type(1) {
+  position: absolute;
+  top: 20px;
+  right: 290px;
+  font-size: 25px;
+  font-weight: 500;
+}
+header > .top > a:nth-of-type(2) {
+  position: absolute;
+  top: 20px;
+  right: 160px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+header > .top > a:hover {
+  color: #0a8d52;
+}
+
+header > .logo img {
+  position: absolute;
+  top: 40px;
+  left: 100px;
+  width: 200px;
+}
+
+header > .search input {
+  position: absolute;
+  top: 80px;
+  left: 400px;
+  width: 950px;
+  height: 70px;
+  font-size: 25px;
+  text-indent: 10px;
+}
+
+header > .search img {
+  position: absolute;
+  top: 83px;
+  left: 1260px;
+  width: 70px;
+}
+
+header > .plus img {
+  position: absolute;
+  top: 65px;
+  right: 270px;
+  width: 90px;
+}
+
+header > .chat img {
+  position: absolute;
+  top: 73px;
+  right: 122px;
+  width: 90px;
+}
+
+main {
+  min-width: 1200px;
+  width: 1800px;
+  height: auto;
+  min-height: 1200px;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+
+main > section {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.friend {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  width: 550px;
+  height: 1200px;
+  border: 1px solid #c2c1c1;
+}
+
+.friend h3 {
+  font-size: 44px;
+  margin: 18px;
+}
+.friend a {
+  font-size: 30px;
+  float: right;
+  margin-top: -62px;
+  margin-right: 210px;
+}
+
+.friend ul {
+  margin: 10px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left; /* this centers the items vertically */
+  align-items: left;
+}
+
+.friend ul > li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.friend ul > li p {
+  margin-left: 50px;
+  font-size: 35px;
+}
+.friend ul > li img:nth-of-type(2) {
+  margin-left: 150px;
+  font-size: 24px;
+}
+
+.message {
+  position: absolute;
+  top: 20px;
+  left: 700px;
+  width: 900px;
+  height: 1200px;
+  border: 1px solid #c2c1c1;
+}
+
+.message h3 {
+  font-size: 44px;
+  margin: 18px;
+}
+.message a {
+  font-size: 30px;
+  float: right;
+  margin-top: -62px;
+  margin-right: 637px;
+}
+
+.message ul {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left; /* this centers the items vertically */
+  align-items: left;
+}
+
+.message ul > li {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #c2c1c1;
+  height: 200px;
+}
+
+.message ul > li:last-child {
+  border: none;
+}
+
+.message ul > li > a {
+  font-size: 33px;
+  float: right;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 10px;
+}
+.message ul > li > p {
+  font-size: 33px;
+  float: right;
+  margin-top: 0px;
+  margin-right: 100px;
+  margin-left: 50px;
+}
+
+.message ul > li > img {
+  margin-left: 20px;
+}
+
+.room {
+  position: absolute;
+  top: 20px;
+  left: 700px;
+  width: 900px;
+  height: 1200px;
+  border: 1px solid #c2c1c1;
+}
+
+footer {
+  margin-top: 100px;
+  height: 400px;
+  background: #ceebde;
+  padding: 43px 0 75px;
+}
+.footer-col:first-child {
+  max-width: 524px;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+.info {
+  margin: 0 -8px;
+}
+.info li {
+  float: left;
+  padding: 8px;
+  line-height: 0.8;
+  font-size: 30px;
+  color: #0d4e31;
+  font-weight: 300;
+}
+.info li:first-child {
+  font-weight: bold;
+  font-weight: 700;
+}
+.link {
+  margin: -10px;
+}
+.link li {
+  float: left;
+  padding: 0 2px;
+}
+.link li a {
+  display: block;
+  line-height: 1;
+  font-family: bold;
+  font-size: 28px;
+  color: #0d4e31;
+  font-weight: 700;
+  padding: 2px;
+  margin: 0 2px 10px;
+}
